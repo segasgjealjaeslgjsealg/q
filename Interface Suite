@@ -43,6 +43,7 @@ local Release = "Prerelease Beta 6.1"
 
 local Midnight = {
     Bind = Enum.KeyCode.End,
+    bindString = "End",
 	Folder = "Midnight", 
 	Options = {}, 
 	ThemeGradient = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 164, 206)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(123, 201, 201)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(224, 138, 175))} 
@@ -1863,8 +1864,7 @@ local SizeBleh = nil
 
 local function Hide(Window, bind, notif)
 	SizeBleh = Window.Size
-	bind = string.split(tostring(bind), "Enum.KeyCode.")
-	bind = bind[2]
+    bind = Midnight.bindString
 	if notif then
 		Midnight:Notification({Title = "Interface Hidden", Content = "The interface has been hidden, you may reopen the interface by Pressing the UI Bind In Settings ("..tostring(bind)..")", Icon = "visibility_off"})
 	end
