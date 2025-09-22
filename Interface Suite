@@ -41,7 +41,8 @@ by Nebula Softworks
 
 local Release = "Prerelease Beta 6.1"
 
-local Midnight = { 
+local Midnight = {
+    Bind = Enum.KeyCode.End,
 	Folder = "Midnight", 
 	Options = {}, 
 	ThemeGradient = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 164, 206)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(123, 201, 201)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(224, 138, 175))} 
@@ -58,7 +59,7 @@ local Camera = workspace.CurrentCamera
 local CoreGui = game:GetService("CoreGui")
 
 local isStudio
-local website = "github.com/Midnight-Softworks"
+local website = "github.com/Nebula-Softworks"
 
 if RunService:IsStudio() then
 	isStudio = true
@@ -5271,7 +5272,7 @@ function Midnight:CreateWindow(WindowSettings)
 			UserInputService.InputBegan:Connect(function(input, processed)
 
 				if CheckingForKey then
-					if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Enum.KeyCode.K then
+					if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Midnight.Bind then
 						local SplitMessage = string.split(tostring(input.KeyCode), ".")
 						local NewKeyNoEnum = SplitMessage[3]
 						Bind.BindFrame.BindBox.Text = tostring(NewKeyNoEnum)
@@ -6657,7 +6658,7 @@ function Midnight:CreateWindow(WindowSettings)
 	end
 
 	Main.Controls.Close.ImageLabel.MouseButton1Click:Connect(function()
-		Hide(Main, Window.Bind, true)
+		Hide(Main, Midnight.Bind, true)
 		dragBar.Visible = false
 		Window.State = false
 		if UserInputService.KeyboardEnabled == false then
