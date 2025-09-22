@@ -2,24 +2,19 @@
 
 
 
-██╗     ██╗   ██╗███╗   ██╗ █████╗     ██╗███╗   ██╗████████╗███████╗██████╗ ███████╗ █████╗  ██████╗███████╗    ███████╗██╗   ██╗██╗████████╗███████╗
-██║     ██║   ██║████╗  ██║██╔══██╗    ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝    ██╔════╝██║   ██║██║╚══██╔══╝██╔════╝
-██║     ██║   ██║██╔██╗ ██║███████║    ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝█████╗  ███████║██║     █████╗      ███████╗██║   ██║██║   ██║   █████╗  
-██║     ██║   ██║██║╚██╗██║██╔══██║    ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗██╔══╝  ██╔══██║██║     ██╔══╝      ╚════██║██║   ██║██║   ██║   ██╔══╝  
-███████╗╚██████╔╝██║ ╚████║██║  ██║    ██║██║ ╚████║   ██║   ███████╗██║  ██║██║     ██║  ██║╚██████╗███████╗    ███████║╚██████╔╝██║   ██║   ███████╗
-╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝    ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝    ╚══════╝ ╚═════╝ ╚═╝   ╚═╝   ╚══════╝
-by    d8b   db d88888b d8888b. db    db db       .d8b.       .d8888.  .d88b.  d88888b d888888b db   d8b   db  .d88b.  d8888b. db   dD .d8888. 
-      888o  88 88'     88  `8D 88    88 88      d8' `8b      88'  YP .8P  Y8. 88'     `~~88~~' 88   I8I   88 .8P  Y8. 88  `8D 88 ,8P' 88'  YP 
-      88V8o 88 88ooooo 88oooY' 88    88 88      88ooo88      `8bo.   88    88 88ooo      88    88   I8I   88 88    88 88oobY' 88,8P   `8bo.   
-      88 V8o88 88~~~~~ 88~~~b. 88    88 88      88~~~88        `Y8b. 88    88 88~~~      88    Y8   I8I   88 88    88 88`8b   88`8b     `Y8b. 
-      88  V888 88.     88   8D 88b  d88 88booo. 88   88      db   8D `8b  d8' 88         88    `8b d8'8b d8' `8b  d8' 88 `88. 88 `88. db   8D 
-      VP   V8P Y88888P Y8888P' ~Y8888P' Y88888P YP   YP      `8888Y'  `Y88P'  YP         YP     `8b8' `8d8'   `Y88P'  88   YD YP   YD `8888Y' 
+███╗   ███╗██╗██████╗ ███╗   ██╗██╗ ██████╗ ██╗  ██╗████████╗    ██╗███╗   ██╗████████╗███████╗██████╗ ███████╗ █████╗  ██████╗███████╗
+████╗ ████║██║██╔══██╗████╗  ██║██║██╔════╝ ██║  ██║╚══██╔══╝    ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝
+██╔████╔██║██║██║  ██║██╔██╗ ██║██║██║  ███╗███████║   ██║       ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝█████╗  ███████║██║     █████╗  
+██║╚██╔╝██║██║██║  ██║██║╚██╗██║██║██║   ██║██╔══██║   ██║       ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗██╔══╝  ██╔══██║██║     ██╔══╝  
+██║ ╚═╝ ██║██║██████╔╝██║ ╚████║██║╚██████╔╝██║  ██║   ██║       ██║██║ ╚████║   ██║   ███████╗██║  ██║██║     ██║  ██║╚██████╗███████╗
+╚═╝     ╚═╝╚═╝╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝
+                                                                                                                                       
 
 
 Main Credits
 
-Hunter (Nebula Softworks) | Designing And Programming | Main Developer
-JustHey (Nebula Softworks) | Configurations, Bug Fixing And More! | Co Developer
+Hunter (Luna Softworks) | Designing And Programming | Main Developer
+JustHey (Luna Softworks) | Configurations, Bug Fixing And More! | Co Developer
 Throit | Color Picker
 Wally | Dragging And Certain Functions
 Sirius | PCall Parsing, Notifications, Slider And Home Tab
@@ -63,7 +58,7 @@ local Camera = workspace.CurrentCamera
 local CoreGui = game:GetService("CoreGui")
 
 local isStudio
-local website = "github.com/Nebula-Softworks"
+local website = "github.com/Midnight-Softworks"
 
 if RunService:IsStudio() then
 	isStudio = true
@@ -2252,7 +2247,7 @@ function Midnight:CreateWindow(WindowSettings)
 		LogoID = "6031097225",
 		LoadingEnabled = true,
 		LoadingTitle = "Midnight Interface Suite",
-		LoadingSubtitle = "by Nebula Softworks",
+		LoadingSubtitle = "by Midnight Softworks",
 
 		ConfigSettings = {},
 
@@ -2526,7 +2521,7 @@ function Midnight:CreateWindow(WindowSettings)
 		HomeTabSettings = Kwargify({
 			Icon = 1,
 			SupportedExecutors = {"Vega X", "Delta", "Nihon", "Xeno"}, -- THESE DEFAULTS ARE PLACEHOLDERS!! I DO NOT ADVERTISE THESE, THEY ARE JUS THE FIRST THAT CAME TO MIND. I HAVE NO IDEA WHETHER THEYA RE RATS (they prob are) AND IM NOT RESPONSIBLE IF U GET VIRUSES FROM INSTALLING AFTER SEEING THIS LIST
-			DiscordInvite = "noinvitelink" -- The disvord invite link. Do not include the link so for example if my invite was discord.gg/nebula I would put nebula
+			DiscordInvite = "noinvitelink" -- The disvord invite link. Do not include the link so for example if my invite was discord.gg/Midnight I would put Midnight
 		}, HomeTabSettings or {})
 
 		local HomeTab = {}
@@ -6750,17 +6745,17 @@ end
 
 if isStudio then
 	local Window = Midnight:CreateWindow({
-		Name = "Nebula Client - Midnight Hub | Blade Ball",
-		Subtitle = "by Nebula Softworks",
+		Name = "Midnight Client - Midnight Hub | Blade Ball",
+		Subtitle = "by Midnight Softworks",
 		LogoID = "123795201100198",
 		LoadingEnabled = true,
-		LoadingTitle = "Nebula Client (Midnight Hub)",
+		LoadingTitle = "Midnight Client (Midnight Hub)",
 		LoadingSubtitle = "Loading script for Blade Ball",
 		KeySystem = true,
 		KeySettings = {
-			Title = "Nebula Client | Key System",
+			Title = "Midnight Client | Key System",
 			Subtitle = "Blade Ball",
-			Note = "Please Enter Your Key To Use Nebula Client",
+			Note = "Please Enter Your Key To Use Midnight Client",
 			FileName = "Key", -- the name of the key file. this will be saved in ur RootFolder. However, if you don't have one, it'll save in ur config folder instead
 			SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
 			Key = {"Example Key"}, -- List of keys that will be accepted by the system, please use a system like Pelican or Luarmor that provide key strings based on your HWID since putting a simple string is very easy to bypass
@@ -6778,7 +6773,7 @@ if isStudio then
 		LogoID = "6031097225",
 		LoadingEnabled = true,
 		LoadingTitle = "Midnight Interface Suite",
-		LoadingSubtitle = "by Nebula Softworks",
+		LoadingSubtitle = "by Midnight Softworks",
 		KeySystem = true,
 		KeySettings = {
 			Title = "Midnight Example Key",
@@ -6794,7 +6789,7 @@ if isStudio then
 		Title = "Welcome to Midnight",
 		Icon = "sparkle",
 		ImageSource = "Material",
-		Content = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Nebula Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website
+		Content = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Midnight Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website
 	})
 
 	local Tabs = {
@@ -6969,7 +6964,7 @@ end
         Title = "Welcome to Midnight",
         Icon = "sparkle",
         ImageSource = "Material",
-        Content = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Nebula Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website
+        Content = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Midnight Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website
     })
     t1:CreateSection()
     local btn = t1:CreateButton({Callback = "", Description = "This Is A Description"})
@@ -6981,7 +6976,7 @@ end
     end})
     t2:CreateLabel({Style = 3})
     t1:CreateParagraph({Text = "Single String"})
-    t1:CreateParagraph({Text = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Nebula Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website})
+    t1:CreateParagraph({Text = "Welcome to the Midnight Interface Suite. This Is an Amazing Quality Freemium UI Library For Roblox Exploiting Made By Midnight Softworks. Midnight was Created in hopes of improving the standard of UI Library designs by being the golden standard for it. Midnight Has Amazing Features like a key system, notification and perfection in aesthetics and design. So, What Are You Waiting For? Start Using Midnight Today at " .. website})
     s = t2:CreateSlider({ Callback = function(v) print(v) end })	
     t1:CreateButton({ Callback = function()
         s:Set({Name = "new name", Callback = ""})
