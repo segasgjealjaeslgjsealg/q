@@ -6672,7 +6672,7 @@ function Midnight:CreateWindow(WindowSettings)
 		tween(Main.Controls.Close.ImageLabel, {ImageColor3 = Color3.fromRGB(195,195,195)})
 	end)
 
-	UserInputService.InputBegan:Connect(function(input, gpe)
+	--[[UserInputService.InputBegan:Connect(function(input, gpe)
 		if gpe then return end
 		if Window.State then return end
 		if input.KeyCode == Midnight.Bind then
@@ -6680,6 +6680,23 @@ function Midnight:CreateWindow(WindowSettings)
 			MidnightUI.MobileSupport.Visible = false
 			dragBar.Visible = true
 			Window.State = true
+		end
+	end)]]
+    UserInputService.InputBegan:Connect(function(input, gpe)
+		if gpe then return end
+		if Window.State then return end
+		if input.KeyCode == Midnight.Bind then
+           if not Window.State then
+			   Unhide(Main, Window.CurrentTab)
+			   MidnightUI.MobileSupport.Visible = false
+			   dragBar.Visible = true
+			   Window.State = true
+            else
+               Hide(Main, Midnight.Bind, true)
+			   MidnightUI.MobileSupport.Visible = true
+			   dragBar.Visible = false
+			   Window.State = false
+            end
 		end
 	end)
 
