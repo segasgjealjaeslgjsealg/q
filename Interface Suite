@@ -3472,7 +3472,7 @@ function Midnight:CreateWindow(WindowSettings)
 				UserInputService.InputBegan:Connect(function(input, processed)
 
 					if CheckingForKey then
-						if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Window.Bind then
+						if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Midnight.Bind then
 							local SplitMessage = string.split(tostring(input.KeyCode), ".")
 							local NewKeyNoEnum = SplitMessage[3]
 							Bind.BindFrame.BindBox.Text = tostring(NewKeyNoEnum)
@@ -5059,7 +5059,7 @@ function Midnight:CreateWindow(WindowSettings)
 			UserInputService.InputBegan:Connect(function(input, processed)
 
 				if CheckingForKey then
-					if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Window.Bind then
+					if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Midnight.Bind then
 						local SplitMessage = string.split(tostring(input.KeyCode), ".")
 						local NewKeyNoEnum = SplitMessage[3]
 						Bind.BindFrame.BindBox.Text = tostring(NewKeyNoEnum)
@@ -6675,7 +6675,7 @@ function Midnight:CreateWindow(WindowSettings)
 	UserInputService.InputBegan:Connect(function(input, gpe)
 		if gpe then return end
 		if Window.State then return end
-		if input.KeyCode == Window.Bind then
+		if input.KeyCode == Midnight.Bind then
 			Unhide(Main, Window.CurrentTab)
 			MidnightUI.MobileSupport.Visible = false
 			dragBar.Visible = true
