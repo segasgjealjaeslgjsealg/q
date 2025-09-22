@@ -1915,7 +1915,7 @@ end
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
 		if Interface.Name == MidnightUI.Name and Interface ~= MidnightUI then
-			Hide(Interface.SmartWindow)
+			Hide(Interface.SmartWindow, getgenv().BindToCloseKey)
 			Interface.Enabled = false
 			Interface.Name = "Midnight-Old"
 		end
@@ -6656,7 +6656,7 @@ function Midnight:CreateWindow(WindowSettings)
 	end
 
 	Main.Controls.Close.ImageLabel.MouseButton1Click:Connect(function()
-		Hide(Main, Window.Bind, true)
+		Hide(Main, getgenv().BindToCloseKey, true)
 		dragBar.Visible = false
 		Window.State = false
 		if UserInputService.KeyboardEnabled == false then
